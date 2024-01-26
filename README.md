@@ -51,3 +51,9 @@ int main() {
 
     return 0;
 }
+
+Q2. it would also be solved using dp
+creating a dp table of (m+1) * (n+1) dimension where m and n are lengths of the strings
+dp[i][j] will showcase the min distnce between the first 'i' charcters of first string and 'j' charcaters of second string
+iterating though the table
+if it matches the set dp[i][j] = dp[i-1][j-1].
